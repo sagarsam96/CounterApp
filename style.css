@@ -1,0 +1,47 @@
+body{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    background-color: aliceblue;
+    width: 50%;
+    padding: 1%;
+}
+
+.output, .buttons{
+    padding: 2%;
+    margin: 1%;
+}
+
+button{
+    padding: 1%;
+    border: 1px solid black;
+    background: transparent;
+    margin: 1%;
+    box-shadow: inset -2px -2px 3px rgba(36, 35, 35, 0.6);
+}
+
+/* button:hover{
+    transform: scale(1.1, 1.1);
+    background-color:red;
+    color: white;
+} */
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6);
+    transform: scale(1.1, 1.1);
+    background-color:red;
+    color: white;
+    border: none;
+    
+}
+
+footer{
+    margin-top: 5%;
+    padding: 1%;
+    background-color: yellow;
+    font-size: small;
+}
