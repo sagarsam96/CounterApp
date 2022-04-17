@@ -4,39 +4,48 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: black;
 }
 
 .container{
-    background-color: aliceblue;
+    /* background-color: white; */
+    color: white;
     width: 50%;
     padding: 1%;
+    outline: 2px solid white;
+
 }
 
 .output, .buttons{
     padding: 2%;
-    margin: 1%;
+    margin: 2%;
 }
 
 button{
-    padding: 1%;
-    border: 1px solid black;
+    padding: 2%;
+    outline: 1px solid white;
     background: transparent;
     margin: 1%;
-    box-shadow: inset -2px -2px 3px rgba(36, 35, 35, 0.6);
+    transition: all 0.4s;
+    cursor: pointer;
+    color: white;
 }
 
-/* button:hover{
-    transform: scale(1.1, 1.1);
-    background-color:red;
-    color: white;
-} */
-button:active {
+button:active{
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6);
     transform: scale(1.1, 1.1);
-    background-color:red;
+    background-color:green;
     color: white;
     border: none;
+    transform: translateY(6px);
     
+}
+
+#decrement:active{
+    background-color:red;
+}
+#reset:active{
+    background-color: aqua;
 }
 
 footer{
@@ -44,4 +53,6 @@ footer{
     padding: 1%;
     background-color: yellow;
     font-size: small;
+    color: black;
 }
+
